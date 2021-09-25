@@ -23,8 +23,6 @@ gem 'jbuilder', '~> 2.7'
 gem 'bcrypt', '~> 3.1.7'
 # Devise
 gem 'devise'
-# Bulma
-gem 'bulma-rails'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
