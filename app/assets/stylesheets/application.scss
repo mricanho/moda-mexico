@@ -13,3 +13,48 @@
  *= require_tree .
  *= require_self
  */
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+ @import "bulma";
+
+ body, .hero.is-info {
+  font-family: 'Roboto', sans-serif;
+  /* background-color: #4E443E; */
+ }
+
+.notification:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.navbar {
+  height: 100px;
+}
+
+abbr[title="required"] {
+  display: none;
+}
+
+/* .button.is-dark,
+.footer {
+  background-color: #4E443E;
+}
+
+.sign-x, a, .new-a {
+  color: #FA5F00;
+}
+
+.button.is-white {
+  color: #847F7B;
+} */
+
+.transparent {
+  background-color: rgba(255, 217, 0, 0.199);
+}
+
+.hero.is-info .title, .navbar-item .button:hover {
+  color: #FA5F00;
+}
+
+.card .card-image,
+.card .card-image .image img {
+  height: 600px;
+}
