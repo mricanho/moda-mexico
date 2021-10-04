@@ -11,7 +11,35 @@
   </head>
 
   <body>
-    <%= render 'layouts/alerts'%>
-    <%= yield %>
+    <nav class="navbar is-black">
+      <div class="navbar-brand">
+        <%= link_to root_path, class: "navbar-item" do %>
+          <%= image_tag("mm-logo.png", alt: "Moda Mexico Logo", :size => "120x180")%>
+        <% end %>
+      </div>
+      <div id="navbarExample" class="navbar-menu is-justify-content-end">
+        <div class="navbar is-black is-align-items-baseline mr-6">
+          <div class="navbar-item button is-black is-align-self-center mt-5">
+            <%= link_to 'NOTICIAS', root_path, class: "button is-black has-text-weight-bold" %>
+          </div>
+          <div class="navbar-item button is-black is-align-self-center mt-5">
+            <%= link_to 'CALENDARIO', root_path, class: "button is-black has-text-weight-bold" %>
+          </div>
+          <div class="navbar-item button is-black is-align-self-center mt-5">
+            <%= link_to 'DISENADORES', root_path, class: "button is-black has-text-weight-bold" %>
+          </div>
+          <div class="navbar-item button is-black is-align-self-center mt-5">
+            <%= link_to 'ABOUT', root_path, class: "button is-black has-text-weight-bold" %>
+          </div>
+          <div class="navbar-item button is-black is-align-self-center mt-5">
+            <%= link_to 'EQUIPO', root_path, class: "button is-black has-text-weight-bold" %>
+          </div>
+        </div>
+    </nav>
+    <main>
+      <%= render 'layouts/alerts'%>
+      <%= yield %>
+    </main>
+    
   </body>
 </html>
