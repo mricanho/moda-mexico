@@ -40,6 +40,16 @@
       <%= render 'layouts/alerts'%>
       <%= yield %>
     </main>
+    <footer class="footer">
+      <div class="content mt-5">
+        <div>
+          <%= link_to root_path, class: "navbar-item" do %>
+            <%= image_tag("mm-logo.png", alt: "Moda Mexico Logo")%>
+          <% end %>
+        </div>
+      </div>
+      
+    </footer>
     
   </body>
 </html>
